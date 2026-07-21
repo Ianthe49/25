@@ -1,41 +1,376 @@
-body {
-    background-color: #f8f3e8;
-    color: #3a2a1c;
+* {
+    box-sizing: border-box;
+}
 
-    font-family: "KaiTi", "STKaiti", serif;
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        rgba(20,10,8,0.75),
+        rgba(20,10,8,0.9)
+    ),
+    url("../image/palace-bg.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+
+    color: #ead9ad;
+
+
+    font-family:
+    "KaiTi",
+    "STKaiti",
+    "Noto Serif TC",
+    serif;
+
 
     text-align: center;
 
-    margin: 40px;
-
-    line-height: 1.8;
 }
+
+
+/* 防止 a 連結產生藍線、藍色符號 */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+a:focus {
+
+    outline: none;
+
+}
+
+
+
+/* 主容器 */
+
+.page {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 70px 20px;
+
+}
+
+
+
+/* 標題區 */
+
+.seal {
+
+    width: 70px;
+
+    height: 70px;
+
+
+    margin: 0 auto 30px;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    border: 2px solid #d4af37;
+
+
+    color: #d4af37;
+
+
+    font-size: 40px;
+
+
+}
+
+
 
 h1 {
-    color: #7a1f1f;
-    font-size: 42px;
+
+    margin: 0;
+
+
+    color: #d4af37;
+
+
+    font-size: 60px;
+
+
+    letter-spacing: 15px;
+
+
+    text-shadow:
+
+    0 0 10px black,
+
+    0 0 30px #6e1f1f;
+
 }
+
+
+
+.subtitle {
+
+    font-size: 22px;
+
+    letter-spacing: 8px;
+
+}
+
+
+
+/* 金色分隔線 */
+
+.line {
+
+    width: 70%;
+
+
+    margin: 45px auto;
+
+
+    border-top:
+
+    1px solid #b99545;
+
+}
+
+
+
+/* 登入按鈕區 */
+
+.login-box {
+
+    text-align: center;
+
+}
+
+
+
+.login-box a {
+
+    display: inline-block;
+
+}
+
+
+
+/* 按鈕 */
 
 button {
-    background: #8b2c2c;
-    color: white;
 
-    border: none;
 
-    padding: 10px 25px;
+    width: 160px;
 
-    border-radius: 8px;
 
-    font-size: 16px;
+    padding: 14px;
+
+
+    margin: 10px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #8b2c2c,
+        #4b1515
+    );
+
+
+    border:
+
+    1px solid #d4af37;
+
+
+    color:
+
+    #f8e7b0;
+
+
+
+    font-size: 20px;
+
+
+    font-family: inherit;
+
 
     cursor: pointer;
+
+
+    letter-spacing: 5px;
+
+
+    transition: 0.3s;
+
+
 }
+
+
 
 button:hover {
-    background: #6e1f1f;
+
+
+    background: #d4af37;
+
+
+    color: #4b1515;
+
+
 }
 
-hr {
-    margin: 30px auto;
+
+
+/* 移除按鈕點擊藍框 */
+
+button:focus {
+
+    outline: none;
+
+}
+
+
+
+/* 公告 */
+
+.notice-card {
+
+
     width: 70%;
+
+
+    margin: auto;
+
+
+    padding: 25px;
+
+
+
+    background:
+
+    rgba(0,0,0,0.35);
+
+
+
+    border:
+
+    1px solid rgba(212,175,55,0.4);
+
+
+}
+
+
+
+.notice h2 {
+
+
+    color:#d4af37;
+
+
+    letter-spacing:5px;
+
+}
+
+
+
+/* 玩家資訊 */
+
+.status {
+
+
+    margin-top:40px;
+
+
+    font-size:18px;
+
+}
+
+
+
+.status span {
+
+
+    color:#d4af37;
+
+}
+
+
+
+/* footer */
+
+footer {
+
+
+    margin-top:70px;
+
+
+    color:#9d8350;
+
+
+}
+
+
+
+
+/* 手機版 */
+
+@media(max-width:600px){
+
+
+    h1 {
+
+        font-size:38px;
+
+        letter-spacing:8px;
+
+    }
+
+
+    .subtitle {
+
+        font-size:16px;
+
+    }
+
+
+    button {
+
+
+        width:130px;
+
+
+        font-size:16px;
+
+    }
+
+
+    .notice-card {
+
+        width:95%;
+
+    }
+
+}
+
+button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
 }
