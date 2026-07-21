@@ -25,32 +25,11 @@ body {
     color: #ead9ad;
 
 
-    font-family:
-    "KaiTi",
-    "STKaiti",
-    "Noto Serif TC",
-    serif;
+    /* 古風字體 */
+    font-family: "STKaiti", "KaiTi", serif;
 
 
     text-align: center;
-
-}
-
-
-/* 防止 a 連結產生藍線、藍色符號 */
-
-a {
-
-    text-decoration: none;
-
-    color: inherit;
-
-}
-
-
-a:focus {
-
-    outline: none;
 
 }
 
@@ -70,7 +49,7 @@ a:focus {
 
 
 
-/* 標題區 */
+/* 印章 */
 
 .seal {
 
@@ -97,10 +76,11 @@ a:focus {
 
     font-size: 40px;
 
-
 }
 
 
+
+/* 標題 */
 
 h1 {
 
@@ -136,7 +116,7 @@ h1 {
 
 
 
-/* 金色分隔線 */
+/* 分隔線 */
 
 .line {
 
@@ -146,15 +126,13 @@ h1 {
     margin: 45px auto;
 
 
-    border-top:
-
-    1px solid #b99545;
+    border-top: 1px solid #b99545;
 
 }
 
 
 
-/* 登入按鈕區 */
+/* 按鈕區 */
 
 .login-box {
 
@@ -163,10 +141,27 @@ h1 {
 }
 
 
-
 .login-box a {
 
     display: inline-block;
+
+}
+
+
+/* 移除超連結效果 */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+a:focus {
+
+    outline: none;
 
 }
 
@@ -195,15 +190,10 @@ button {
     );
 
 
-    border:
-
-    1px solid #d4af37;
+    border: 1px solid #d4af37;
 
 
-    color:
-
-    #f8e7b0;
-
+    color: #f8e7b0;
 
 
     font-size: 20px;
@@ -220,7 +210,6 @@ button {
 
     transition: 0.3s;
 
-
 }
 
 
@@ -233,16 +222,16 @@ button:hover {
 
     color: #4b1515;
 
-
 }
 
 
 
-/* 移除按鈕點擊藍框 */
-
-button:focus {
+button:focus,
+button:active {
 
     outline: none;
+
+    box-shadow: none;
 
 }
 
@@ -272,7 +261,6 @@ button:focus {
     border:
 
     1px solid rgba(212,175,55,0.4);
-
 
 }
 
@@ -313,7 +301,7 @@ button:focus {
 
 
 
-/* footer */
+/* 頁尾 */
 
 footer {
 
@@ -323,9 +311,7 @@ footer {
 
     color:#9d8350;
 
-
 }
-
 
 
 
@@ -367,10 +353,4 @@ footer {
 
     }
 
-}
-
-button:focus,
-button:active {
-    outline: none;
-    box-shadow: none;
-}
+}}
