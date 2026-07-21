@@ -1,18 +1,27 @@
-.btn {
-    display: inline-block;
+button {
     background: #8b2c2c;
     color: white;
+
+    border: none;
+
     padding: 10px 25px;
+
     border-radius: 8px;
-    text-decoration: none;
-    margin: 0 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
     background: #6e1f1f;
 }
 
-hr {
-    margin: 30px auto;
-    width: 70%;
+a {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus {
+    outline: none;
 }
