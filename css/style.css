@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-
 /* ===== 全站 ===== */
 
 body {
@@ -15,8 +10,8 @@ body {
     background:
 
     linear-gradient(
-        rgba(25,35,30,0.75),
-        rgba(25,35,30,0.85)
+        rgba(224,212,202,0.75),
+        rgba(203,182,202,0.85)
     ),
 
     url("../image/palace-bg.jpg");
@@ -27,7 +22,7 @@ body {
     background-position: center;
 
 
-    color: #E6D293;
+    color: #9395BD;
 
 
     font-family: "Noto Serif TC", serif;
@@ -39,83 +34,11 @@ body {
 
 
 
-/* ===== 連結 ===== */
-
-a {
-
-    text-decoration: none;
-
-    color: inherit;
-
-}
-
-
-a:focus {
-
-    outline: none;
-
-}
-
-
-
-/* ===== 主容器 ===== */
-
-.page {
-
-    max-width: 900px;
-
-    margin: auto;
-
-
-    padding: 70px 20px;
-
-}
-
-
-
-/* ===== 印章 ===== */
-
-.seal {
-
-
-    width: 70px;
-
-    height: 70px;
-
-
-    margin: 0 auto 30px;
-
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-
-
-    border: 2px solid #A73E28;
-
-
-    color: #A73E28;
-
-
-    font-size: 40px;
-
-
-}
-
-
-
 /* ===== 標題 ===== */
 
 h1 {
 
-
-    margin: 0;
-
-
-    color: #E6D293;
+    color: #9395BD;
 
 
     font-family: "Noto Serif TC", serif;
@@ -130,28 +53,23 @@ h1 {
     letter-spacing: 15px;
 
 
-
     text-shadow:
 
-    0 0 10px #3EA995,
+    0 0 10px #C4CAD0,
 
-    0 0 25px rgba(167,62,40,0.5);
+    0 0 25px rgba(147,149,189,0.5);
 
 }
 
 
 
-.subtitle {
+/* ===== 印章 ===== */
 
+.seal {
 
-    margin-top: 20px;
+    border: 2px solid #9395BD;
 
-
-    font-size: 22px;
-
-
-    letter-spacing: 8px;
-
+    color: #9395BD;
 
 }
 
@@ -161,41 +79,9 @@ h1 {
 
 .line {
 
-
-    width: 70%;
-
-
-    margin: 45px auto;
-
-
-    border-top:
-
-    1px solid #E6D293;
-
+    border-top: 1px solid #C4CAD0;
 
 }
-
-
-
-/* ===== 按鈕區 ===== */
-
-.login-box {
-
-
-    text-align: center;
-
-}
-
-
-
-.login-box a {
-
-
-    display: inline-block;
-
-}
-
-
 
 
 
@@ -204,62 +90,26 @@ h1 {
 button {
 
 
-    width: 160px;
-
-
-    padding: 14px;
-
-
-    margin: 10px;
-
-
-
     background:
-
 
     linear-gradient(
 
         135deg,
 
-        #A73E28,
+        #9395BD,
 
-        #7C2B1D
+        #CBB6CA
 
     );
 
 
-
-    border:
-
-    1px solid #E6D293;
+    border: 1px solid #E0D4CA;
 
 
-
-    color: #E6D293;
-
+    color: #E0D4CA;
 
 
     font-family: "Noto Serif TC", serif;
-
-
-
-    font-size: 20px;
-
-
-
-    font-weight: 700;
-
-
-
-    letter-spacing: 5px;
-
-
-
-    cursor: pointer;
-
-
-
-    transition: 0.3s;
 
 
 }
@@ -269,27 +119,10 @@ button {
 button:hover {
 
 
-    background: #E6D293;
+    background: #92CCA2;
 
 
-    color: #A73E28;
-
-
-}
-
-
-
-/* 消除手機點擊效果 */
-
-button:focus,
-
-button:active {
-
-
-    outline: none;
-
-
-    box-shadow: none;
+    color: #ffffff;
 
 
 }
@@ -300,45 +133,23 @@ button:active {
 
 .notice h2 {
 
-
-    color: #E6D293;
-
-
-    font-size: 28px;
-
-
-    letter-spacing: 5px;
-
+    color: #9395BD;
 
 }
-
 
 
 
 .notice-card {
 
 
-    width: 70%;
-
-
-    margin: auto;
-
-
-    padding: 25px;
-
-
-
     background:
 
-
-    rgba(62,169,149,0.15);
-
+    rgba(224,212,202,0.45);
 
 
     border:
 
-    1px solid #93AC8C;
-
+    1px solid #C4CAD0;
 
 }
 
@@ -346,24 +157,9 @@ button:active {
 
 /* ===== 玩家資訊 ===== */
 
-.status {
-
-
-    margin-top: 40px;
-
-
-    font-size: 18px;
-
-
-}
-
-
-
 .status span {
 
-
-    color: #3EA995;
-
+    color: #92CCA2;
 
 }
 
@@ -373,83 +169,6 @@ button:active {
 
 footer {
 
+    color: #9395BD;
 
-    margin-top: 70px;
-
-
-    color: #93AC8C;
-
-
-}
-
-
-
-
-
-/* ===== 手機版 ===== */
-
-@media(max-width:600px){
-
-
-    .page {
-
-
-        padding: 50px 15px;
-
-
-    }
-
-
-
-    h1 {
-
-
-        font-size: 38px;
-
-
-        letter-spacing: 8px;
-
-
-    }
-
-
-
-    .subtitle {
-
-
-        font-size: 16px;
-
-
-        letter-spacing: 5px;
-
-
-    }
-
-
-
-    button {
-
-
-        width: 130px;
-
-
-        font-size: 16px;
-
-
-    }
-
-
-
-    .notice-card {
-
-
-        width: 95%;
-
-
-    }
-
-}
-
-body {
-    background: pink !important;
 }
